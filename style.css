@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  color: #0066cc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li::before {
+  content: "✨ ";
+}
