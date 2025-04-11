@@ -1,75 +1,42 @@
 body {
-    margin: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: linear-gradient(to right, #d6e0f5, #ffe6f0);
-    color: #333;
+  background: black url('images/xbox-style-bg.jpg') no-repeat center center fixed;
+  color: #0f0; /* vert fluo */
+  font-family: 'Verdana', sans-serif;
+  text-align: center;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #fff0f5;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-bottom: 3px double #ffb6c1;
+  margin-top: 2rem;
 }
 
-header h1 {
-    font-size: 2rem;
-    color: #ff69b4;
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1.5rem;
 }
 
-nav a {
-    margin-left: 1.5rem;
-    text-decoration: none;
-    color: #555;
-    font-weight: bold;
+.services a {
+  background-color: #111;
+  border: 2px solid #0f0;
+  padding: 1rem;
+  width: 150px;
+  text-decoration: none;
+  color: #0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
 }
 
-main {
-    display: flex;
-    margin: 2rem;
-    gap: 2rem;
+.services a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #0f0;
 }
 
-.stickers {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.stickers button {
-    background: #ffccff;
-    border: none;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px #999;
-    transition: 0.3s;
-}
-
-.stickers button:hover {
-    background: #ffd9ec;
-}
-
-.cahier {
-    background: #ffffff;
-    padding: 2rem;
-    flex-grow: 1;
-    box-shadow: 5px 5px 15px #ccc;
-    border: 3px dashed #ffb6c1;
-    min-height: 300px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.page {
-    display: none;
-}
-
-.page.active {
-    display: block;
+.services img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5rem;
 }
