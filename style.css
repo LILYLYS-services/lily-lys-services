@@ -1,21 +1,75 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 2rem;
-  max-width: 700px;
-  margin: auto;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #d6e0f5, #ffe6f0);
+    color: #333;
 }
 
-h1 {
-  color: #0066cc;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff0f5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 3px double #ffb6c1;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+header h1 {
+    font-size: 2rem;
+    color: #ff69b4;
 }
 
-li::before {
-  content: "✨ ";
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.stickers {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stickers button {
+    background: #ffccff;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #999;
+    transition: 0.3s;
+}
+
+.stickers button:hover {
+    background: #ffd9ec;
+}
+
+.cahier {
+    background: #ffffff;
+    padding: 2rem;
+    flex-grow: 1;
+    box-shadow: 5px 5px 15px #ccc;
+    border: 3px dashed #ffb6c1;
+    min-height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
 }
