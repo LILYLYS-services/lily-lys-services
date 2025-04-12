@@ -3,44 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <title>LILY-LYS-SERVICES</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url('background.gif') repeat;
+      color: #00FF00;
+      font-family: 'Comic Sans MS', cursive;
+    }
+    #container {
+      width: 800px;
+      margin: 0 auto;
+      border: 5px ridge #FFD700;
+      background-color: #000000;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      border: 2px solid #FFD700;
+      padding: 10px;
+    }
+    .navbar {
+      background-color: #3333FF;
+      text-align: center;
+    }
+    .navbar a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .blink {
+      animation: clignote 1s linear infinite;
+    }
+    @keyframes clignote {
+      50% { opacity: 0; }
+    }
+    marquee {
+      color: #FF4500;
+      font-size: 20px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>LILY-LYS-SERVICES</h1>
-    <nav>
-      <ul>
-        <li><a href="services/anglais.html">Cours d'anglais</a></li>
-        <li><a href="services/massage.html">Massage</a></li>
-        <li><a href="services/babysitting.html">Babysitting</a></li>
-        <li><a href="services/ecoute.html">Écoute</a></li>
-        <li><a href="services/petsitting.html">Petsitting</a></li>
-        <li><a href="services/motivation.html">Motivation</a></li>
-        <li><a href="services/tableaux.html">Tableaux</a></li>
-        <li><a href="services/sports.html">Sports</a></li>
-        <li><a href="services/cuisine.html">Cuisine</a></li>
-        <li><a href="services/decoration.html">Décoration</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="grid">
-      <div class="card"><a href="services/anglais.html"><img src="https://via.placeholder.com/100" alt=""><span>Cours d'anglais</span></a></div>
-      <div class="card"><a href="services/massage.html"><img src="https://via.placeholder.com/100" alt=""><span>Massage</span></a></div>
-      <div class="card"><a href="services/babysitting.html"><img src="https://via.placeholder.com/100" alt=""><span>Babysitting</span></a></div>
-      <div class="card"><a href="services/ecoute.html"><img src="https://via.placeholder.com/100" alt=""><span>Écoute</span></a></div>
-      <div class="card"><a href="services/petsitting.html"><img src="https://via.placeholder.com/100" alt=""><span>Petsitting</span></a></div>
-      <div class="card"><a href="services/motivation.html"><img src="https://via.placeholder.com/100" alt=""><span>Motivation</span></a></div>
-      <div class="card"><a href="services/tableaux.html"><img src="https://via.placeholder.com/100" alt=""><span>Tableaux</span></a></div>
-      <div class="card"><a href="services/sports.html"><img src="https://via.placeholder.com/100" alt=""><span>Sports</span></a></div>
-      <div class="card"><a href="services/cuisine.html"><img src="https://via.placeholder.com/100" alt=""><span>Cuisine</span></a></div>
-      <div class="card"><a href="services/decoration.html"><img src="https://via.placeholder.com/100" alt=""><span>Décoration</span></a></div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 LILY-LYS-SERVICES. Tous droits réservés.</p>
-  </footer>
+  <div id="container">
+    <table>
+      <tr>
+        <td colspan="2">
+          <marquee behavior="scroll" direction="left">Bienvenue sur LILY-LYS-SERVICES - Le meilleur des services à votre portée !</marquee>
+        </td>
+      </tr>
+      <tr>
+        <td class="navbar">
+          <a href="anglais.html">Cours d'anglais</a> | 
+          <a href="massage.html">Massage</a> | 
+          <a href="babysitting.html">Babysitting</a> | 
+          <a href="ecoute.html">Écoute</a> | 
+          <a href="petsitting.html">Petsitting</a> | 
+          <a href="motivation.html">Motivation</a> | 
+          <a href="tableaux.html">Tableaux</a> | 
+          <a href="sports.html">Sports</a> | 
+          <a href="cuisine.html">Cuisine</a> | 
+          <a href="decoration.html">Décoration</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h1 class="blink">Nouveautés !</h1>
+          <p>Découvrez nos nouveaux services disponibles dès maintenant.</p>
+          <img src="nouveaute.gif" alt="Nouveauté">
+        </td>
+        <td>
+          <h1>Contactez-nous</h1>
+          <p>Pour plus d'informations, n'hésitez pas à nous écrire.</p>
+          <img src="contact.gif" alt="Contact">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <p>Vous êtes le visiteur n° <img src="compteur.gif" alt="Compteur de visites"></p>
+          <p><a href="livre_dor.html">Signer notre livre d'or</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>
