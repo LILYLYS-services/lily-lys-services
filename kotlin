@@ -1,0 +1,12 @@
+LILY-LYS-SERVICES/
+├── index.html
+├── css/
+│   └── style.css
+├── assets/
+│   ├── bg-zebra.gif
+│   ├── frame.png (interface argentée)
+│   └── vhs-anglais.png, vhs-massage.png, etc.
+└── pages/
+    ├── anglais.html
+    ├── massage.html
+    └── ...
