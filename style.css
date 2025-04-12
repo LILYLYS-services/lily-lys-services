@@ -1,99 +1,41 @@
 body {
   margin: 0;
+  background: url('../assets/bg-zebra.gif') repeat;
   font-family: 'Verdana', sans-serif;
-  background: linear-gradient(to bottom, #0f0f0f, #2a2a2a);
-  color: #00ff66;
+  color: white;
 }
 
-header {
-  background: linear-gradient(to right, #333, #111);
-  border-bottom: 4px solid #00ff66;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 0 15px #0f0;
+.interface {
+  width: 950px;
+  margin: 50px auto;
+  position: relative;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  color: #7fff00;
-  text-shadow: 1px 1px #000;
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
-  gap: 0.5rem;
-}
-
-nav a {
-  background: #1a1a1a;
-  border: 2px solid #00ff66;
-  color: #00ff66;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 0 5px #00ff66;
-  transition: 0.2s;
-}
-
-nav a:hover {
-  background: #00ff66;
-  color: #000;
-  box-shadow: 0 0 15px #00ff66;
-}
-
-main {
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
-  max-width: 900px;
+.interface-frame {
   width: 100%;
-}
-
-.card {
-  background: #1f1f1f;
-  border: 2px solid #444;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #00ff66;
-}
-
-.card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 0.5rem;
-}
-
-.card span {
+  z-index: 1;
   display: block;
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  color: #7fff00;
 }
 
-footer {
-  background: #111;
-  text-align: center;
-  padding: 1rem;
-  color: #777;
-  font-size: 0.9rem;
-  border-top: 2px solid #00ff66;
+.vhs-container {
+  position: absolute;
+  top: 100px; /* Ajuste en fonction de ton image interface */
+  left: 80px;
+  width: 800px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vhs-container img {
+  width: 100%;
+  max-width: 750px;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.vhs-container img:hover {
+  transform: scale(1.05);
+  border: 2px solid #ff00ff;
 }
